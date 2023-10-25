@@ -1,0 +1,26 @@
+<%- include("partials/header.ejs") %>
+
+<main>
+    <div class="container">
+        <h2 id="h1"> <%= fullDate.wDay %>, <%= fullDate.mOfYear %> <%= fullDate.dOfWeek %></h2>
+        
+        <div class="todoList">
+            <% if(locals.divs) { %>
+                <% for(i = 0; i <= divs.length - 1; i++) { %>
+                    <div>
+                        <input type="checkbox"></input>
+                        <p><%= divs[i] %></p>
+                    </div>
+                <% } %>
+            <% } %>
+            
+            <form action="/" method="POST">
+                <input id="textInput" type="text" name="todo" placeholder="New Item">
+                <button type="submit">Add</button>
+            </form>
+        </div>
+
+    </div>
+
+
+<%- include("partials/footer.ejs") %>

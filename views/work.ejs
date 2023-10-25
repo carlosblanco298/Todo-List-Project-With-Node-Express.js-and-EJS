@@ -1,0 +1,32 @@
+<%- include("partials/header.ejs") %>
+
+<style>
+    body {
+        background-image: -webkit-linear-gradient(65deg, #ffffff 50%, #583a12 50%);
+    }
+</style>
+
+<main>
+    <div class="container">
+        <h2> Work </h2>
+        
+        <div class="todoList">
+            <% if(locals.workDivs) { %>
+                <% for(i = 0; i <= workDivs.length - 1; i++) { %>
+                    <div>
+                        <input type="checkbox"></input>
+                        <p><%= workDivs[i] %></p>
+                    </div>
+                <% } %>
+            <% } %>
+            
+            <form action="/work" method="POST">
+                <input id="textInput" type="text" name="todowork" placeholder="New Item">
+                <button type="submit">Add</button>
+            </form>
+        </div>
+
+    </div>
+
+
+<%- include("partials/footer.ejs") %>

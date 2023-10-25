@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  },
+  "name": "todo-list-with-expres-and-ejs",
+  "version": "1.0.0",
+  "description": "Todo list project with Express.js and EJS by Carlos Blanco",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Express",
+    "EJS",
+    "TODOLIST"
+  ],
+  "author": "Carlos Blanco",
+  "license": "ISC"
+}

@@ -1,0 +1,143 @@
+* {
+    font-family: 'Playpen Sans', cursive;
+}
+
+body {
+    background-color: #e4e9fd;
+    background-image: -webkit-linear-gradient(65deg, #ffffff 50%, #76c8ff 50%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    border: none;
+}
+
+header {
+    background-color: black;
+    margin: 0;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+}
+
+nav div a, svg{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    fill: white;
+}
+
+nav div a:hover, svg:hover {
+    fill: #51b0ff;
+    color: #51b0ff;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+a {
+    color: white;
+    font-size: 1.2em;
+}
+
+h1 {
+    color: white;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.todoList {
+    background-color: rgba(243, 243, 243);
+    border-radius: 3%;
+    box-shadow: 0px 0px 5px 5px #646262;
+}
+
+.todoList div {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+    height: 60px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.todoList div p {
+    align-items: center;
+    margin: 0;
+}
+
+div input {
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+form {
+    display: flex;
+    width: 90%;
+    height: 60px;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+form input {
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    background-color: rgba(243, 243, 243, 0.945);
+}
+
+form input:focus {
+    outline: none;
+    border-bottom: 3px solid #51b0ff;
+}
+
+form button {
+    width: 10%;
+    border-radius: 30%;
+    box-shadow: none;
+    border: none;
+    margin-left: 10px;
+    padding: 0;
+}
+
+form button:active {
+    background-color: #5ef4ff;
+    color: white;
+}
+
+footer {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+
+
